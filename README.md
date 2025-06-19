@@ -194,7 +194,14 @@ Cybersecurity isn’t just about systems—it’s about people.
 ## 10. Appendices
 
 - `set.config` file (modified)  
-- Screenshot: SET Mass Mailer interface  
+ ![image](https://github.com/user-attachments/assets/e43f121c-4e2a-4ae0-b3b9-27c929e66c88)
+
+
+- Screenshot: SET Mass Mailer interface
+
+  ![image](https://github.com/user-attachments/assets/ee986df6-891a-4fd3-bbcc-81a3a67894ad)
+
+  
 - Sample HTML phishing message:
   ```html
   <p>There was a suspicious login detected on your GitHub account.  
@@ -202,18 +209,26 @@ Cybersecurity isn’t just about systems—it’s about people.
   Please act urgently to secure your account.</p>
   ```
 
-- Credential Harvester configuration screenshot  
-- Cloned GitHub login page preview  
-- SET command-line setup logs  
-- [Google Doc Walkthrough (Demo Presentation)](LINK_PLACEHOLDER)  
-- [Final Slide Deck](LINK_PLACEHOLDER)
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/f2e1020b-48da-4958-ad7a-c345816ba93d" />
+
+- Credential Harvester configuration screenshot
+
+  <img width="390" alt="image" src="https://github.com/user-attachments/assets/971f6c8f-cf32-4380-9e65-516716e0dded" />
+
+- Phising Email result
+
+  <img width="468" alt="image" src="https://github.com/user-attachments/assets/fe2bded9-beec-4d48-a6d0-d9d94ea390b5" />
+ 
+- [Google Doc Walkthrough (Demo Presentation)](https://tinyurl.com/t6j2ycku)  
+- [Final Presentation Deliverable Slide](https://tinyurl.com/pyhtn83f)
 
 ---
 
 ## 11. References
 
 - [Social-Engineer Toolkit Documentation – TrustedSec](https://github.com/trustedsec/social-engineer-toolkit)  
-- [Kali Linux Documentation](https://www.kali.org/docs/)  
+- [Kali Linux Documentation](https://www.kali.org/docs/)
+- [StationX SET Demo](https://www.stationx.net/social-engineer-toolkit/)
 - [OWASP Cheat Sheets](https://cheatsheetseries.owasp.org/)  
 - [MITRE ATT&CK: Phishing](https://attack.mitre.org/techniques/T1566/)  
 - UCI Cybersecurity Bootcamp Course Materials
