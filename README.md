@@ -101,12 +101,15 @@ A personal experience that inspired this project occurred when I helped an elder
 ## 5. Methodology
 
 ### 🔧 Planning & Configuration
+  Using sudo privileges, I launched the Social-Engineer Toolkit (SET) via sudo setoolkit and configured both my Gmail account settings and the Apache server parameters         within the set.config files to support email delivery and web hosting.
 
 - Launched SET with `sudo setoolkit`
 - Configured Apache and Gmail settings in `set.config`
 - Enabled email delivery and web hosting capabilities
 
+
 ### ✉️ Mass Mailer Setup
+  From SET’s main menu, I selected the Mass Mailer Attack and opted for the Single Email Address option, appropriate for my isolated testing environment (though a full         mailing list can be used in real-world scenarios). I composed a phishing email using HTML to embed a hyperlink with the message:
 
 - Chose: `Mass Mailer Attack > Single Email Address`
 - Composed phishing email in HTML:
@@ -125,6 +128,7 @@ A personal experience that inspired this project occurred when I helped an elder
 - The link redirected users to a cloned GitHub login page hosted locally.
 
 ### 🌐 Website Cloning & Credential Harvester
+  To enable credential harvesting, I configured SET’s Credential Harvester module under Website Attack Vectors > Site Cloner. This required inputting the legitimate GitHub     URL and my VM’s IP address, as the Apache server would serve the cloned login page. Once configured, the attack vector was ready to capture input data from unsuspecting      users.
 
 - Configured under: `Website Attack Vectors > Credential Harvester > Site Cloner`
 - Input GitHub URL and VM IP
@@ -132,12 +136,14 @@ A personal experience that inspired this project occurred when I helped an elder
 - Page designed to capture entered credentials
 
 ### ▶️ Demo Execution
+  The simulation demonstrated how attackers can easily replicate legitimate login pages and send phishing emails to harvest user credentials. During the live demo, I           configured and sent the phishing email from my Gmail account to my Yahoo email, completing the process within minutes.
 
 - Phishing email sent from Gmail to Yahoo Mail
 - Apache hosted the cloned login site
 - Entire flow executed in minutes
 
 ### ⚠️ Limitations
+  A few limitations were present during the project. First, using personal email accounts restricted sender spoofing, so the phishing message did not convincingly appear to    come from a trusted IT source (GitHub IT Support). Additionally, the demo stopped short of capturing actual credentials, as the focus was on demonstrating the setup and      attack flow, not full exploitation.
 
 - Gmail sender spoofing not possible using my own personal accounts.
 - Google security features affected email delivery
@@ -146,6 +152,8 @@ A personal experience that inspired this project occurred when I helped an elder
 ---
 
 ## 6. Demonstration & Results
+  SET enabled the rapid creation and distribution of a phishing email. A cloned site convincingly mimicked GitHub’s login page. Though credentials were not harvested, the      demonstration showed how attackers can trick users into divulging login information.
+  Screenshots and command logs (see Appendix) documents steps from configuration through email delivery and site cloning.
 
 - Successfully created and sent a phishing email
 - Cloned GitHub login page hosted locally
@@ -158,17 +166,18 @@ A personal experience that inspired this project occurred when I helped an elder
 
 ### 💥 Impact
 
-This project illustrated how even novice attackers can deploy phishing campaigns using SET. It also reinforced how critical **end-user education** is to cybersecurity.
+  Social engineering attacks can bypass even the most advanced defenses by exploiting trust. The ease of deploying such attacks with SET underscores how critical user          awareness is to an organization’s security.
 
 ### 🌍 Real-World Examples
 
-- Summer 2024: Fake QR codes on parking meters in Redondo and Newport Beach were used to steal payment info.
-- Countless modern attacks begin with phishing emails crafted to deceive even trained users.
+  In Summer 2024, attackers placed fake QR codes on parking meters in Redondo Beach and Newport Beach to steal payment information, an example of social engineering aimed at   malicious intent. 
+-	Additional examples: [RELATED EVENTS OF PHISHING SCAMS](https://www.bluevoyant.com/knowledge-center/8-devastating-phishing-attack-examples-and-prevention-tips)
+
+
 
 ### 🤔 Challenges
 
-- Inability to spoof email sender due to Gmail restrictions
-- No credential data captured for ethical and scope reasons
+  Ultimately, spoofing sender identity within my Gmail was not possible and credentials were not captured. Google security automatic settings also played a roll in this.
 
 ### 🧠 Lessons Learned
 
