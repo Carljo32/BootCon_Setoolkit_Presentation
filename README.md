@@ -112,8 +112,14 @@ A personal experience that inspired this project occurred when I helped an elder
 - Composed phishing email in HTML:
   ```
   Sender: GitHub IT Support  
-  We have detected a suspicious login attempt on your GitHub account.  
+  There was a suspicious login detected on your GitHub account.  
   Please visit [malicious link] to prevent further access.
+  Please act urgently to secure your account.
+  ```
+   ```html
+  <p>There was a suspicious login detected on your GitHub account.  
+  Please visit <a href="http://172.00.000.000" target="_blank" rel="noopener">https://github.com/login</a> immediately to prevent further access.  
+  Please act urgently to secure your account.</p>
   ```
 
 - The link redirected users to a cloned GitHub login page hosted locally.
